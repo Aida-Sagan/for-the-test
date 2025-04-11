@@ -1,0 +1,82 @@
+@use '../../assets/scss/base/variables' as *;
+
+.section {
+	padding: 1rem 1rem;
+	text-align: center;
+}
+
+.title {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1;
+	color: $color-black;
+}
+
+.subtitle {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+	margin-top: 1rem;
+	color: $color-black;
+}
+
+.tabs {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin: 2rem auto 2.5rem;
+	border-bottom: 2px solid $color-border-default;
+	max-width: 960px;
+	padding: 0 1rem;
+
+	@media (max-width: 767px) {
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+.tab {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: $color-text-muted;
+	background: none;
+	border: none;
+	padding: 0.5rem 0;
+	cursor: pointer;
+	position: relative;
+
+	&.active {
+		color: $color-button-primary;
+
+		&::after {
+			content: '';
+			position: absolute;
+			height: 4px;
+			width: 100%;
+			left: -2%;
+			bottom: -2px;
+			background-color: $color-button-primary-hover;
+			border-radius: 2px;
+		}
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 2rem;
+	justify-content: center;
+	max-width: 960px;
+	margin: 0 auto;
+}

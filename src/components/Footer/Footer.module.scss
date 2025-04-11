@@ -1,0 +1,20 @@
+@use '../../assets/scss/base/variables' as *;
+
+.footer {
+	background: $color-footer-bg;
+	color: $color-white-light;
+	text-align: center;
+	padding: $spacing-md;
+	font-family: $font-main;
+	font-size: $font-size-small;
+}
+
+.copy {
+	color: $color-copy-text;
+	font-family: $font-main;
+	font-weight: $font-weight-light;
+	font-size: $font-size-small;
+	line-height: 100%;
+	letter-spacing: 0;
+	text-align: center;
+}

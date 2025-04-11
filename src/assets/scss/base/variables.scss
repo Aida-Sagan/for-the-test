@@ -1,0 +1,41 @@
+//Цвета
+$color-white-light: #f7f9fc;
+$color-light: #ffffff;
+$color-lighter: #f1f3f6;
+
+$color-black: #000;
+$color-dark: #202b40;
+$color-grey: #333;
+$color-grey-lighter: #a0a6b1;
+$color-text-muted: #9da5b9;
+
+$color-accent: #7B93FF;
+$color-button-primary: #4a6fff;
+$color-button-primary-hover: #3f76ff;
+$color-button-bg: #3f76ff;
+$color-button-text: #ffffff;
+
+$color-border-default: #e4e7ec;
+$color-card-bg: #e1e5ee;
+$color-placeholder-text: #7d8494;
+$color-overlay-bg: rgba(42, 50, 75, 0.7);
+$color-overlay-subtext: #FFD166;
+$color-overlay-heading: #ffffff;
+
+$color-footer-bg: rgba(42, 50, 75, 1);
+$color-copy-text: rgba(255, 255, 255, 1);
+
+//Шрифты
+$font-main: 'Inter', sans-serif;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-weight-light: 300;
+
+// Отступы
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+
+// Радиусы
+$border-radius: 8px;
+$button-radius: 6px;

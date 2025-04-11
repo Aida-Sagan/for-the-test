@@ -1,0 +1,19 @@
+@use '../../assets/scss/base/variables' as *;
+
+.section {
+	padding: 4rem 1rem;
+	background-color: $color-white-light;
+	text-align: center;
+	cursor: pointer;
+}
+
+.title {
+	margin-bottom: 3rem;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}

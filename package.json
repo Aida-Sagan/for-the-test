@@ -71,5 +71,17 @@
 		"vite-plugin-imagemin": "^0.6.1",
 		"vite-plugin-vercel": "^9.0.4",
 		"vite-tsconfig-paths": "^4.3.2"
-	}
+	},
+	"description": "# dev ``` npm run dev ```",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Aida-Sagan/for-the-test.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Aida-Sagan/for-the-test/issues"
+	},
+	"homepage": "https://github.com/Aida-Sagan/for-the-test#readme"
 }

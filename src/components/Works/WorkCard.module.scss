@@ -1,0 +1,67 @@
+@use '../../assets/scss/base/variables' as *;
+
+.card {
+	position: relative;
+	width: 100%;
+	height: 262px;
+	border-radius: $border-radius;
+	background-color: $color-card-bg;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.3s ease;
+
+	&:hover {
+		.placeholder {
+			display: none;
+		}
+		.overlay {
+			display: flex;
+		}
+	}
+}
+
+.placeholder {
+	font-family: $font-main;
+	font-weight: 700;
+	font-size: $font-size-base;
+	color: $color-placeholder-text;
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	inset: 0;
+	background-color: $color-overlay-bg;
+	border-radius: $border-radius;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	h3 {
+		font-size: $font-size-base;
+		font-weight: 700;
+		color: $color-overlay-heading !important;
+	}
+
+	p {
+		color: $color-overlay-subtext;
+		font-size: $font-size-small;
+		font-weight: 500;
+		line-height: 100%;
+	}
+
+	button {
+		background-color: $color-button-bg;
+		border: none;
+		padding: 6px 8px;
+		border-radius: $button-radius;
+		color: $color-button-text;
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 15px;
+	}
+}
